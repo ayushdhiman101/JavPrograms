@@ -20,7 +20,7 @@ public class JPLeftRightMatrix {
             }
 
                     }
-            System.out.println(" ");
+            System.out.print(" ");
         }    
     }
      public static void main(String[] args)
