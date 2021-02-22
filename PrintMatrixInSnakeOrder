@@ -31,5 +31,4 @@ public class JPLeftRightMatrix {
                       { 13, 14, 15, 16 } };
         snakeOrder(a);
     }
-    
 }
