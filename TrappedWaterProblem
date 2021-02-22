@@ -1,0 +1,35 @@
+
+import java.util.Scanner;
+
+public static void main(String[] args)
+{
+	Scanner sc=new Scanner(System.in);          
+        System.out.println("Enter number of elements in array");
+        int a= sc.nextInt(); 
+        
+        int array[]=new int[a];;
+        for(int i=0;i<a;i++){
+            System.out.println(i+1 + "st position");
+            array[i]= sc.nextInt();            
+        }
+
+        int fin=0;
+	for(int i=1; i <a-1; i++)
+	{
+		int left = array[i];
+		for(int j=0; j<i; j++)
+		{
+		    left = Math.max(left, array[j]);
+		}
+
+		int right=array[i];
+		for(int j=i+1; j<a; j++)
+		{
+        right=Math.max(right,array[j]);
+		}
+
+		fin+=Math.min(left,right)-array[i];
+	}
+          System.out.println(fin);
+}
+}
